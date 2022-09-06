@@ -31,12 +31,12 @@ export function PlayOrPauseAudio() {
 function playNext() {
     if (PlayListIndex >= 3) {
         PlayListIndex = 0;
-        audio.src = `../../assets/sounds/${playList[PlayListIndex]}`;
+        audio.src = `../assets/sounds/${playList[PlayListIndex]}`;
         audio.load();
         audio.play();
     }else {
         PlayListIndex++;
-        audio.src = `../../assets/sounds/${playList[PlayListIndex]}`;
+        audio.src = `../assets/sounds/${playList[PlayListIndex]}`;
         console.log(PlayListIndex);
         audio.load();
         audio.play();
@@ -50,12 +50,12 @@ function playPrev() {
   
     if (PlayListIndex <= 0 ) {
         PlayListIndex = 3;
-        audio.src = `../../assets/sounds/${playList[PlayListIndex]}`;
+        audio.src = `../assets/sounds/${playList[PlayListIndex]}`;
         audio.load();
         audio.play();
     }else {
         PlayListIndex--;
-        audio.src = `../../assets/sounds/${playList[PlayListIndex]}`;
+        audio.src = `../assets/sounds/${playList[PlayListIndex]}`;
         console.log(PlayListIndex);
         audio.load();
         audio.play();
