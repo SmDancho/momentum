@@ -11,7 +11,7 @@ const playList = ['Aqua Caelestis.mp3', 'Ennio Morricone.mp3','River Flows In Yo
 let PlayListIndex = 0; 
 
 const audio = new Audio();
-audio.src = `../../assets/sounds/${playList[PlayListIndex]}`;
+audio.src = `../assets/sounds/${playList[PlayListIndex]}`;
 
 export function PlayOrPauseAudio() {
     if(audio.paused) {
@@ -37,7 +37,6 @@ function playNext() {
     }else {
         PlayListIndex++;
         audio.src = `../assets/sounds/${playList[PlayListIndex]}`;
-        console.log(PlayListIndex);
         audio.load();
         audio.play();
         play.classList.add('pause');
