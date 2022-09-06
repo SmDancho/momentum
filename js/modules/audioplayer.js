@@ -70,7 +70,7 @@ function createPlayListLement() {
         element.classList.add('play-item');
         playListBlock.appendChild(element);
         element.addEventListener('click', (e) => {
-                audio.src = `../../assets/sounds/${playList[i]}`;
+                audio.src = `assets/sounds/${playList[i]}`;
                 play.classList.add('pause');
                 audio.load();
                 audio.play();
